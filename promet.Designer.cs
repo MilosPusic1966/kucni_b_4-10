@@ -1,7 +1,7 @@
 ﻿
 namespace kucni_b_4_10
 {
-    partial class Form1
+    partial class Promet
     {
         /// <summary>
         /// Required designer variable.

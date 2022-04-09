@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace kucni_b_4_10
 {
-    public partial class Form1 : Form
+    public partial class Promet : Form
     {
         string CS = "Data source = INF_4_PROFESOR\\SQLPBG;Initial Catalog = kucni_budzet; Integrated Security = True";
         DataTable novcanik, osoba, trosak, org, partner, promet, promet_view;
@@ -21,7 +21,7 @@ namespace kucni_b_4_10
 
         }
 
-        public Form1()
+        public Promet()
         {
             InitializeComponent();
         }
