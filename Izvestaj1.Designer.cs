@@ -35,7 +35,7 @@ namespace kucni_b_4_10
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(53, 308);
+            this.button1.Location = new System.Drawing.Point(192, 402);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -45,10 +45,12 @@ namespace kucni_b_4_10
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(160, 22);
+            this.listBox1.ItemHeight = 19;
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(535, 407);
+            this.listBox1.Size = new System.Drawing.Size(776, 346);
             this.listBox1.TabIndex = 1;
             // 
             // Izvestaj1
