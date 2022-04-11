@@ -52,6 +52,12 @@
     <Compile Include="Glavna.Designer.cs">
       <DependentUpon>Glavna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Izvestaj1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izvestaj1.Designer.cs">
+      <DependentUpon>Izvestaj1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Promet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     </Compile>
     <EmbeddedResource Include="Glavna.resx">
       <DependentUpon>Glavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izvestaj1.resx">
+      <DependentUpon>Izvestaj1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Promet.resx">
       <DependentUpon>Promet.cs</DependentUpon>

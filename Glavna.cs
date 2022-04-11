@@ -52,5 +52,11 @@ namespace kucni_b_4_10
             Promet nova = new Promet();
             nova.Show();
         }
+
+        private void izvestaj1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Izvestaj1 nova = new Izvestaj1();
+            nova.Show();
+        }
     }
 }

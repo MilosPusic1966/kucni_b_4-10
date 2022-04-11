@@ -39,6 +39,7 @@ namespace kucni_b_4_10
             this.prometToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prometToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.izvestajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.izvestaj1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,9 +119,18 @@ namespace kucni_b_4_10
             // 
             // izvestajiToolStripMenuItem
             // 
+            this.izvestajiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.izvestaj1ToolStripMenuItem});
             this.izvestajiToolStripMenuItem.Name = "izvestajiToolStripMenuItem";
             this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.izvestajiToolStripMenuItem.Text = "Izvestaji";
+            // 
+            // izvestaj1ToolStripMenuItem
+            // 
+            this.izvestaj1ToolStripMenuItem.Name = "izvestaj1ToolStripMenuItem";
+            this.izvestaj1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.izvestaj1ToolStripMenuItem.Text = "Izvestaj 1";
+            this.izvestaj1ToolStripMenuItem.Click += new System.EventHandler(this.izvestaj1ToolStripMenuItem_Click);
             // 
             // Glavna
             // 
@@ -150,5 +160,6 @@ namespace kucni_b_4_10
         private System.Windows.Forms.ToolStripMenuItem prometToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prometToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem izvestajiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem izvestaj1ToolStripMenuItem;
     }
 }
