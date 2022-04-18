@@ -40,6 +40,7 @@ namespace kucni_b_4_10
             this.prometToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.izvestajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izvestaj1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.izvestaj2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,35 +71,35 @@ namespace kucni_b_4_10
             // osobeToolStripMenuItem
             // 
             this.osobeToolStripMenuItem.Name = "osobeToolStripMenuItem";
-            this.osobeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.osobeToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.osobeToolStripMenuItem.Text = "Osobe";
             this.osobeToolStripMenuItem.Click += new System.EventHandler(this.osobeToolStripMenuItem_Click);
             // 
             // novcaniciToolStripMenuItem
             // 
             this.novcaniciToolStripMenuItem.Name = "novcaniciToolStripMenuItem";
-            this.novcaniciToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novcaniciToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.novcaniciToolStripMenuItem.Text = "Novcanici";
             this.novcaniciToolStripMenuItem.Click += new System.EventHandler(this.novcaniciToolStripMenuItem_Click);
             // 
             // troskoviToolStripMenuItem
             // 
             this.troskoviToolStripMenuItem.Name = "troskoviToolStripMenuItem";
-            this.troskoviToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.troskoviToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.troskoviToolStripMenuItem.Text = "Troskovi";
             this.troskoviToolStripMenuItem.Click += new System.EventHandler(this.troskoviToolStripMenuItem_Click);
             // 
             // oRGoviToolStripMenuItem
             // 
             this.oRGoviToolStripMenuItem.Name = "oRGoviToolStripMenuItem";
-            this.oRGoviToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.oRGoviToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.oRGoviToolStripMenuItem.Text = "ORG-ovi";
             this.oRGoviToolStripMenuItem.Click += new System.EventHandler(this.oRGoviToolStripMenuItem_Click);
             // 
             // partneriToolStripMenuItem
             // 
             this.partneriToolStripMenuItem.Name = "partneriToolStripMenuItem";
-            this.partneriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.partneriToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.partneriToolStripMenuItem.Text = "Partneri";
             this.partneriToolStripMenuItem.Click += new System.EventHandler(this.partneriToolStripMenuItem_Click);
             // 
@@ -113,14 +114,15 @@ namespace kucni_b_4_10
             // prometToolStripMenuItem1
             // 
             this.prometToolStripMenuItem1.Name = "prometToolStripMenuItem1";
-            this.prometToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.prometToolStripMenuItem1.Size = new System.Drawing.Size(113, 22);
             this.prometToolStripMenuItem1.Text = "Promet";
             this.prometToolStripMenuItem1.Click += new System.EventHandler(this.prometToolStripMenuItem1_Click);
             // 
             // izvestajiToolStripMenuItem
             // 
             this.izvestajiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.izvestaj1ToolStripMenuItem});
+            this.izvestaj1ToolStripMenuItem,
+            this.izvestaj2ToolStripMenuItem});
             this.izvestajiToolStripMenuItem.Name = "izvestajiToolStripMenuItem";
             this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.izvestajiToolStripMenuItem.Text = "Izvestaji";
@@ -131,6 +133,13 @@ namespace kucni_b_4_10
             this.izvestaj1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.izvestaj1ToolStripMenuItem.Text = "Izvestaj 1";
             this.izvestaj1ToolStripMenuItem.Click += new System.EventHandler(this.izvestaj1ToolStripMenuItem_Click);
+            // 
+            // izvestaj2ToolStripMenuItem
+            // 
+            this.izvestaj2ToolStripMenuItem.Name = "izvestaj2ToolStripMenuItem";
+            this.izvestaj2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.izvestaj2ToolStripMenuItem.Text = "Izvestaj 2";
+            this.izvestaj2ToolStripMenuItem.Click += new System.EventHandler(this.izvestaj2ToolStripMenuItem_Click);
             // 
             // Glavna
             // 
@@ -161,5 +170,6 @@ namespace kucni_b_4_10
         private System.Windows.Forms.ToolStripMenuItem prometToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem izvestajiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem izvestaj1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem izvestaj2ToolStripMenuItem;
     }
 }

@@ -58,6 +58,12 @@
     <Compile Include="Izvestaj1.Designer.cs">
       <DependentUpon>Izvestaj1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Izvestaj2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izvestaj2.Designer.cs">
+      <DependentUpon>Izvestaj2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Promet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Izvestaj1.resx">
       <DependentUpon>Izvestaj1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izvestaj2.resx">
+      <DependentUpon>Izvestaj2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Promet.resx">
       <DependentUpon>Promet.cs</DependentUpon>
