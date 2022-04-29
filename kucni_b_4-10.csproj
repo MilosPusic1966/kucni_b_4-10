@@ -52,6 +52,12 @@
     <Compile Include="Glavna.Designer.cs">
       <DependentUpon>Glavna.cs</DependentUpon>
     </Compile>
+    <Compile Include="izv-9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="izv-9.Designer.cs">
+      <DependentUpon>izv-9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Izvestaj1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="Glavna.resx">
       <DependentUpon>Glavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="izv-9.resx">
+      <DependentUpon>izv-9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Izvestaj1.resx">
       <DependentUpon>Izvestaj1.cs</DependentUpon>

@@ -64,5 +64,11 @@ namespace kucni_b_4_10
             Izvestaj2 nova = new Izvestaj2();
             nova.Show();
         }
+
+        private void izvestaj49ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            izv_9 nova = new izv_9();
+            nova.Show();
+        }
     }
 }

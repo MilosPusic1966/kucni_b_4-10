@@ -41,6 +41,7 @@ namespace kucni_b_4_10
             this.izvestajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izvestaj1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izvestaj2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.izvestaj49ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,7 +123,8 @@ namespace kucni_b_4_10
             // 
             this.izvestajiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.izvestaj1ToolStripMenuItem,
-            this.izvestaj2ToolStripMenuItem});
+            this.izvestaj2ToolStripMenuItem,
+            this.izvestaj49ToolStripMenuItem});
             this.izvestajiToolStripMenuItem.Name = "izvestajiToolStripMenuItem";
             this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.izvestajiToolStripMenuItem.Text = "Izvestaji";
@@ -140,6 +142,13 @@ namespace kucni_b_4_10
             this.izvestaj2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.izvestaj2ToolStripMenuItem.Text = "Izvestaj 2";
             this.izvestaj2ToolStripMenuItem.Click += new System.EventHandler(this.izvestaj2ToolStripMenuItem_Click);
+            // 
+            // izvestaj49ToolStripMenuItem
+            // 
+            this.izvestaj49ToolStripMenuItem.Name = "izvestaj49ToolStripMenuItem";
+            this.izvestaj49ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.izvestaj49ToolStripMenuItem.Text = "Izvestaj 4-9";
+            this.izvestaj49ToolStripMenuItem.Click += new System.EventHandler(this.izvestaj49ToolStripMenuItem_Click);
             // 
             // Glavna
             // 
@@ -171,5 +180,6 @@ namespace kucni_b_4_10
         private System.Windows.Forms.ToolStripMenuItem izvestajiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem izvestaj1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem izvestaj2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem izvestaj49ToolStripMenuItem;
     }
 }
