@@ -299,6 +299,7 @@ namespace kucni_b_4_10
             this.button4.TabIndex = 30;
             this.button4.Text = "Add SIifarnik";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dataGridView1
             // 
@@ -308,7 +309,7 @@ namespace kucni_b_4_10
             this.dataGridView1.Size = new System.Drawing.Size(758, 266);
             this.dataGridView1.TabIndex = 31;
             // 
-            // Form1
+            // Promet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -343,7 +344,7 @@ namespace kucni_b_4_10
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Name = "Form1";
+            this.Name = "Promet";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

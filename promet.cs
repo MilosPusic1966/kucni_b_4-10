@@ -16,6 +16,52 @@ namespace kucni_b_4_10
         string CS = "Data source = INF_4_PROFESOR\\SQLPBG;Initial Catalog = kucni_budzet; Integrated Security = True";
         DataTable novcanik, osoba, trosak, org, partner, promet, promet_view;
 
+        private void popuni_combo_osoba()
+        {
+            SqlConnection veza = new SqlConnection(CS);
+            osoba = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter("select * from osoba", veza);
+            adapter.Fill(osoba);
+            comboBox1.DataSource = osoba;
+            comboBox1.DisplayMember = "naziv";
+            comboBox1.ValueMember = "id";
+            return;
+        }
+        private void popuni_combo_novcanik()
+        {
+            SqlConnection veza = new SqlConnection(CS);
+            novcanik = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter("select * from novcanik", veza);
+            adapter.Fill(novcanik);
+            comboBox2.DataSource = novcanik;
+            comboBox2.DisplayMember = "naziv";
+            comboBox2.ValueMember = "id";
+            return;
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (textBox5.Text.Length != 0)
+            {
+                SqlConnection veza = new SqlConnection(CS);
+                SqlCommand komanda = new SqlCommand("INSERT INTO osoba VALUES('" + textBox5.Text + "')",veza);
+                // MessageBox.Show(komanda.CommandText);
+                veza.Open();
+                komanda.ExecuteNonQuery();
+                veza.Close();
+                //////////////////////////
+                popuni_combo_osoba();
+            }
+            if (textBox7.Text.Length != 0)
+            {
+                SqlConnection veza = new SqlConnection(CS);
+                SqlCommand komanda = new SqlCommand("INSERT INTO novcanik VALUES('" + textBox7.Text + "')", veza);
+                veza.Open();
+                komanda.ExecuteNonQuery();
+                veza.Close();
+                popuni_combo_novcanik();
+            }
+        }
+
         private void osvezi_grid()
         {
             SqlDataAdapter adapter;
@@ -96,23 +142,12 @@ namespace kucni_b_4_10
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            popuni_combo_novcanik();
+            popuni_combo_osoba();
             SqlConnection veza = new SqlConnection(CS);
-            novcanik = new DataTable();
-            SqlDataAdapter adapter = new SqlDataAdapter("select * from novcanik", veza);
-            adapter.Fill(novcanik);
-            comboBox2.DataSource = novcanik;
-            comboBox2.DisplayMember = "naziv";
-            comboBox2.ValueMember = "id";
-
-            osoba = new DataTable();
-            adapter = new SqlDataAdapter("select * from osoba", veza);
-            adapter.Fill(osoba);
-            comboBox1.DataSource = osoba;
-            comboBox1.DisplayMember = "naziv";
-            comboBox1.ValueMember = "id";
-
             trosak = new DataTable();
-            adapter = new SqlDataAdapter("select * from trosak", veza);
+            SqlDataAdapter adapter = new SqlDataAdapter("select * from trosak", veza);
             adapter.Fill(trosak);
             comboBox3.DataSource = trosak;
             comboBox3.DisplayMember = "naziv";
